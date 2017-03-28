@@ -3,7 +3,7 @@ Section: admin
 Priority: extra
 Maintainer: Michael Davidsaver <mdavidsaver@gmail.com>
 Build-Depends: debhelper (>= 9),
-               libtinyxml-dev, libzip-dev,
+               pkg-config, libtinyxml-dev, libzip-dev,
 Standards-Version: 3.9.6
 Homepage: https://github.com/TheImagingSource/tiscamera
 Vcs-Browser: https://github.com/TheImagingSource/tiscamera
