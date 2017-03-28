@@ -1,0 +1,9 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: tiscamera
+Upstream-Contact: Edgar Thier <edgar.thier@theimagingsource.com>
+Source: https://github.com/TheImagingSource/tiscamera
+
+Files: *
+Copyright: 2016 The Imaging Source Europe GmbH
+License: Apache 2.0
+  /usr/share/common-licenses/Apache-2.0

@@ -1,0 +1,17 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE=1
+
+%:
+	dh $@ -Dtools/camera-ip-conf
+
+override_dh_auto_clean:
+	rm -f tools/camera-ip-conf/*.o
+	rm -f tools/camera-ip-conf/camera-ip-conf-cli
+
+override_dh_auto_build:
+	dh_auto_build -- cli
+
+override_dh_auto_install:
+	install -d debian/tmp/usr/bin
+	cp tools/camera-ip-conf/camera-ip-conf-cli debian/tmp/usr/bin/camera-ip-conf
